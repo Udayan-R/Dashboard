@@ -7,15 +7,16 @@ import UserLogin from "./UserLogin";
 const LoginBar = styled.h6`
   width: 100%;
   display: flex;
-  padding: 3.1rem;
+  padding: 2rem;
   color: #fff;
   justify-content: space-between;
+  align-items: center;
 
   border-bottom: 0.6px solid #525151;
 `;
 
 const Title = styled.p`
-  font-size: 3.2rem;
+  font-size: 2.6rem;
   font-weight: 500;
 `;
 

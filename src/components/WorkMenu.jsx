@@ -44,20 +44,19 @@ const WorkLink = styled.div`
 const HelpStar = styled.div`
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 4rem;
-  padding: 4rem;
-  padding-bottom: 0rem;
+  gap: 1.6rem;
+  margin-bottom: 1rem;
+  padding: 2rem 2rem;
 `;
 
 const H1 = styled.h1`
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 2.2rem;
+  font-weight: 500;
   color: #fff;
 `;
 
 const Help = styled.div`
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: #737070;
 `;
 const Workimg = styled.div`
@@ -67,9 +66,9 @@ const Workimg = styled.div`
 const Ul = styled.div`
   list-style: none;
   display: flex;
-  gap: 8rem;
+  gap: 4.8rem;
   position: relative;
-  padding-left: 4rem;
+  padding-left: 2rem;
   padding-bottom: 2rem;
   border-bottom: 0.6px solid #525151;
 `;
@@ -94,7 +93,7 @@ const Button = styled.button`
     width: 100%;
     background: #fff;
     left: 0;
-    bottom: -2rem;
+    bottom: -2.2rem;
     transition: 0.3s ease-in-out;
   }
 `;

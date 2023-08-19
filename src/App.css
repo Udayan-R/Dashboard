@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   transition: 0.3s all;
+  overflow-y: hidden;
 }
 
 :root {
@@ -28,10 +29,12 @@ body {
   background: var(--sidebar-bgcolor);
   color: var(--primary-color);
   height: 100vh;
+  flex-shrink: 0;
   width: 8rem;
   text-align: center;
   padding: 4rem 0rem;
   border-right: 1px solid var(--logo-border);
+  /* display: flex; */
 }
 
 .logo {
@@ -39,16 +42,34 @@ body {
   margin: 0 1rem;
   padding-top: 1rem;
   background: var(--logo-border);
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   border-radius: 2rem;
 }
 
 .icons {
-  font-size: 2.6rem;
   padding: 1.2rem 0;
   color: var(--primary-color);
-  margin: 2rem 0;
   position: relative;
+}
+.routes {
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logout_icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10rem;
+  font-size: 2.4rem;
+  gap: 4rem;
+}
+
+.icon {
+  width: 8rem;
+  font-size: 2.4rem;
 }
 
 .icon:hover::before {
@@ -64,7 +85,7 @@ body {
 /* ----------------------------------------------------------- */
 
 .sidebar_main {
-  padding: 3.6rem 0;
+  padding: 2.1rem 0;
   width: 28rem;
   height: 100vh;
   background: var(--sidebar-bgcolor);
@@ -72,7 +93,7 @@ body {
 }
 
 .search_cont {
-  height: 7.4rem;
+  height: 7rem;
   border-bottom: 1px solid var(--logo-border);
 }
 
@@ -80,7 +101,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1.2rem 2.4rem;
+  padding: 1rem 2.4rem;
   justify-content: center;
   background: var(--logo-border);
   margin: 0 2rem;
@@ -99,16 +120,6 @@ body {
   background: var(--logo-border);
   font-size: 1.4rem;
   color: var(--primary-color);
-}
-
-.fav_cont {
-  font-size: 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 2rem;
-  color: var(--primary-color);
-  font-weight: 400;
 }
 
 .project_name {

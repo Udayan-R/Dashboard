@@ -7,32 +7,97 @@ import { FiMessageSquare } from "react-icons/fi";
 const UcardData = [
   {
     id: "1",
-    tagTitle: "Research",
-    CardTitle: "Research Featured Order",
-    CardContent: "An Order Feature is needed for users when making purchases",
-    CardDate: "16 May",
-    CardCom: "3",
+    CardName: "Upcoming Task",
+    cardItems: [
+      {
+        id: "1",
+        tagTitle: "Research",
+        CardTitle: "Research Featured Order",
+        CardContent:
+          "An Order Feature is needed for users when making purchases",
+        CardDate: "16 May",
+        CardCom: "3",
+        img: "",
+      },
+      {
+        id: "1",
+        tagTitle: "Research",
+        CardTitle: "Research Featured Order",
+        CardContent:
+          "An Order Feature is needed for users when making purchases",
+        CardDate: "16 May",
+        CardCom: "3",
+        img: "",
+      },
+    ],
   },
   {
-    id: "1",
-    tagTitle: "Research",
-    CardTitle: "Research Featured Order",
-    CardContent: "An Order Feature is needed for users when making purchases",
-    CardDate: "16 May",
-    CardCom: "4",
+    id: "2",
+    CardName: "Working in progress",
+    cardItems: [
+      {
+        id: "2",
+        tagTitle: "Research",
+        CardTitle: "Research Featured Order",
+        CardContent:
+          "An Order Feature is needed for users when making purchases",
+        CardDate: "16 May",
+        CardCom: "3",
+        img: "",
+      },
+    ],
+  },
+  {
+    id: "3",
+    CardName: "Review Task",
+    cardItems: [
+      {
+        id: "3",
+        tagTitle: "Research",
+        CardTitle: "Research Featured Order",
+        CardContent:
+          "An Order Feature is needed for users when making purchases",
+        CardDate: "16 May",
+        CardCom: "3",
+        img: "",
+      },
+    ],
+  },
+  {
+    id: "4",
+    CardName: "Completed Task",
+    cardItems: [
+      {
+        id: "3",
+        tagTitle: "Research",
+        CardTitle: "Research Featured Order",
+        CardContent:
+          "An Order Feature is needed for users when making purchases",
+        CardDate: "16 May",
+        CardCom: "3",
+        img: "",
+      },
+    ],
   },
 ];
 const TaskSec = styled.div`
-  height: 48rem;
-  padding: 4rem 8rem;
-  overflow: auto;
+  height: 54rem;
+  padding: 4rem 4rem;
+  padding-bottom: 0;
+  display: flex;
+  gap: 4rem;
 `;
 
 const UpcomingDiv = styled.div`
-  width: 45rem;
+  height: 50rem;
+  width: 32rem;
   padding: 2rem;
   border: 1px solid #525151;
   border-radius: 1.4rem;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 const Head = styled.div`
   display: flex;
@@ -41,20 +106,22 @@ const Head = styled.div`
 `;
 
 const H4 = styled.h4`
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #fff;
 `;
 const UpIcons = styled.div`
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 2rem;
   display: flex;
+  align-items: center;
   gap: 2rem;
 `;
 
 const Ucard = styled.div`
+  width: 26rem;
   margin: 1rem;
-  padding: 1.8rem;
+  padding: 1.4rem;
   padding-bottom: 1rem;
   position: relative;
   border: 1px solid #525151;
@@ -78,13 +145,11 @@ const Tag1 = styled.span`
   background: #b4d6ff;
   padding: 0.2rem 0.8rem;
   border-radius: 0.4rem;
-  font-size: 700;
 `;
 const Tag2 = styled.span`
   background: #e9ff93;
   padding: 0.2rem 0.8rem;
   border-radius: 0.4rem;
-  font-size: 700;
 `;
 
 const UcardContents = styled.div`
@@ -92,11 +157,10 @@ const UcardContents = styled.div`
 `;
 
 const P = styled.div`
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin-top: 1.4rem;
   color: #737070;
   line-height: 1.5;
-  margin-bottom: 2rem;
 `;
 
 const Date = styled.div`
@@ -150,58 +214,66 @@ const Commentbar = styled.div`
 const Task = () => {
   return (
     <TaskSec>
-      <UpcomingDiv>
-        <Head>
-          <H4>Upcoming Task</H4>
-          <UpIcons>
-            <MdAdd />
-            <BsThreeDots />
-          </UpIcons>
-        </Head>
-        {UcardData.map((data) => (
-          <>
-            <Ucard>
-              <TagBars>
-                <TagBar>
-                  <Tag1>UI Design</Tag1>
-                  <Tag2>{data.tagTitle}</Tag2>
-                </TagBar>
-                <div>
-                  <BsThreeDots style={{ color: "#737070", fontSize: "2rem" }} />
-                </div>
-              </TagBars>
-              <UcardContents>
-                <div>
-                  <H4>{data.CardTitle}</H4>
-                  <P>{data.CardContent}</P>
-                  <img src="" alt="" />
-                </div>
-                <Date>
-                  <li style={{ listStyle: "none" }}>
-                    <AiOutlineCalendar
-                      style={{ color: "#737070", fontSize: "2rem" }}
-                    />
-                  </li>
-                  <DateContent>Due to : </DateContent>
-                  <DateSpan>{data.CardDate}</DateSpan>
-                </Date>
-                <Border></Border>
-              </UcardContents>
-              <Comment>
-                <div>
-                  <ImgComments src="src/images/dashboard.png" alt="" />
-                  <ImgComments src="src/images/dashboard.png" alt="" />
-                  <ImgComments src="src/images/dashboard.png" alt="" />
-                </div>
-                <Commentbar>
-                  <FiMessageSquare />
-                  <span>{data.CardCom}</span>
-                </Commentbar>
-              </Comment>
-            </Ucard>
-          </>
-        ))}
-      </UpcomingDiv>
+      {UcardData.map((data) => (
+        <>
+          <UpcomingDiv>
+            <Head>
+              <H4>{data.CardName}</H4>
+              <UpIcons>
+                <MdAdd />
+                <BsThreeDots />
+              </UpIcons>
+            </Head>
+            <div>
+              {data.cardItems.map((item) => (
+                <>
+                  <Ucard>
+                    <TagBars>
+                      <TagBar>
+                        <Tag1>UI Design</Tag1>
+                        <Tag2>{item.tagTitle}</Tag2>
+                      </TagBar>
+                      <div>
+                        <BsThreeDots
+                          style={{ color: "#737070", fontSize: "2rem" }}
+                        />
+                      </div>
+                    </TagBars>
+                    <UcardContents>
+                      <div>
+                        <H4>{item.CardTitle}</H4>
+                        <P>{item.CardContent}</P>
+                        <img src="" alt="" />
+                      </div>
+                      <Date>
+                        <li style={{ listStyle: "none" }}>
+                          <AiOutlineCalendar
+                            style={{ color: "#737070", fontSize: "2rem" }}
+                          />
+                        </li>
+                        <DateContent>Due to : </DateContent>
+                        <DateSpan>{item.CardDate}</DateSpan>
+                      </Date>
+                      <Border></Border>
+                    </UcardContents>
+                    <Comment>
+                      <div>
+                        <ImgComments src="src/images/dashboard.png" alt="" />
+                        <ImgComments src="src/images/dashboard.png" alt="" />
+                        <ImgComments src="src/images/dashboard.png" alt="" />
+                      </div>
+                      <Commentbar>
+                        <FiMessageSquare />
+                        <span>{item.CardCom}</span>
+                      </Commentbar>
+                    </Comment>
+                  </Ucard>
+                </>
+              ))}
+            </div>
+          </UpcomingDiv>
+        </>
+      ))}
     </TaskSec>
   );
 };

@@ -8,6 +8,8 @@ import { LuMessageSquare } from "react-icons/lu";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { AiOutlineSetting } from "react-icons/ai";
 import { FiUsers } from "react-icons/fi";
+import { AiOutlineExclamationCircle } from "react-icons/ai";
+import { FiLogOut } from "react-icons/fi";
 import MainContainer from "./MainContainer";
 
 // eslint-disable-next-line no-unused-vars
@@ -66,6 +68,10 @@ const Sidebar = ({ children }) => {
                 </div>
               </NavLink>
             ))}
+            <div className="logout_icons">
+              <AiOutlineExclamationCircle />
+              <FiLogOut />
+            </div>
           </section>
         </div>
         <main className="main_sidebar">{children}</main>

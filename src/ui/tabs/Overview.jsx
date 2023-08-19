@@ -3,14 +3,14 @@ import FileCard from "../../utils/FileCard";
 
 const OverviewSec = styled.div`
   height: 100%;
-  padding: 4rem 8rem;
+  padding: 4rem 4rem;
 `;
 
 const Contents = styled.div`
   width: 80rem;
 `;
 const H3 = styled.h3`
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   color: #fff;
   font-weight: 500;
   margin-bottom: 2.8rem;
@@ -22,12 +22,12 @@ const H4 = styled.h4`
   margin-bottom: 2rem;
 `;
 const Span = styled.span`
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #fff;
 `;
 
 const P = styled.div`
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-top: 1.4rem;
   color: #737070;
   line-height: 1.5;
