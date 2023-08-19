@@ -46,6 +46,26 @@ const UcardData = [
         CardCom: "3",
         img: "",
       },
+      {
+        id: "2",
+        tagTitle: "Research",
+        CardTitle: "Research Featured Order",
+        CardContent:
+          "An Order Feature is needed for users when making purchases",
+        CardDate: "16 May",
+        CardCom: "3",
+        img: "",
+      },
+      {
+        id: "2",
+        tagTitle: "Research",
+        CardTitle: "Research Featured Order",
+        CardContent:
+          "An Order Feature is needed for users when making purchases",
+        CardDate: "16 May",
+        CardCom: "3",
+        img: "",
+      },
     ],
   },
 
@@ -85,14 +105,49 @@ const UcardData = [
       },
     ],
   },
+  {
+    id: "4",
+    CardName: "Completed Task",
+    cardItems: [
+      {
+        id: "3",
+        tagTitle: "Research",
+        CardTitle: "Research Featured Order",
+        CardContent:
+          "An Order Feature is needed for users when making purchases",
+        CardDate: "16 May",
+        CardCom: "3",
+        img: "",
+      },
+      {
+        id: "3",
+        tagTitle: "Research",
+        CardTitle: "Research Featured Order",
+        CardContent:
+          "An Order Feature is needed for users when making purchases",
+        CardDate: "16 May",
+        CardCom: "3",
+        img: "",
+      },
+      {
+        id: "3",
+        tagTitle: "Research",
+        CardTitle: "Research Featured Order",
+        CardContent:
+          "An Order Feature is needed for users when making purchases",
+        CardDate: "16 May",
+        CardCom: "3",
+        img: "",
+      },
+    ],
+  },
 ];
 const TaskSec = styled.div`
   height: 57rem;
   padding: 4rem 4rem;
   padding-bottom: 0;
   display: flex;
-  gap: 4rem;
-  overflow-x: scroll;
+  gap: 2rem;
 `;
 
 const UpcomingDiv = styled.div`
