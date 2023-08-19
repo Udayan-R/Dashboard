@@ -31,6 +31,7 @@ const UcardData = [
       },
     ],
   },
+
   {
     id: "2",
     CardName: "Working in progress",
@@ -61,12 +62,16 @@ const UcardData = [
         CardCom: "3",
         img: "",
       },
-    ],
-  },
-  {
-    id: "4",
-    CardName: "Completed Task",
-    cardItems: [
+      {
+        id: "3",
+        tagTitle: "Research",
+        CardTitle: "Research Featured Order",
+        CardContent:
+          "An Order Feature is needed for users when making purchases",
+        CardDate: "16 May",
+        CardCom: "3",
+        img: "",
+      },
       {
         id: "3",
         tagTitle: "Research",
@@ -81,8 +86,6 @@ const UcardData = [
   },
 ];
 const TaskSec = styled.div`
-  /* width: fit-content;s */
-  width: 150rem;
   height: 57rem;
   padding: 4rem 4rem;
   padding-bottom: 0;

@@ -5,7 +5,7 @@ import Notification from "../ui/notification/Notification";
 import UserLogin from "./UserLogin";
 
 const LoginBar = styled.div`
-  width: 135rem;
+  width: 100%;
   display: flex;
   padding: 2rem;
   color: #fff;

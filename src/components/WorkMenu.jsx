@@ -40,7 +40,7 @@ const workMenu = [
 
 const WorkLink = styled.div`
   height: 14rem;
-  width: 135rem;
+  width: 100%;
   padding-bottom: 2.6rem;
 `;
 
