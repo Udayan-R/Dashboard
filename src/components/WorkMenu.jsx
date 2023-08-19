@@ -8,6 +8,7 @@ import Task from "../ui/tabs/Task";
 import Timeline from "../ui/tabs/Timeline";
 import Discussion from "../ui/tabs/Discussion";
 import Files from "../ui/tabs/Files";
+import { NavLink } from "react-router-dom";
 
 const workMenu = [
   {
@@ -131,14 +132,16 @@ const WorkMenu = ({ children }) => {
                 {workMenu.map((tab, i) => (
                   <>
                     <Tabs>
-                      <Button
-                        id={tab.id}
-                        disabled={activeTab === `${tab.id}`}
-                        onClick={handleTabClick}
-                        key={i}
-                      >
-                        {tab.name}
-                      </Button>
+                      <NavLink>
+                        <Button
+                          id={tab.id}
+                          disabled={activeTab === `${tab.id}`}
+                          onClick={handleTabClick}
+                          key={i}
+                        >
+                          {tab.name}
+                        </Button>
+                      </NavLink>
                     </Tabs>
                   </>
                 ))}

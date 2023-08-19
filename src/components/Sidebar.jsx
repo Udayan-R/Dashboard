@@ -57,22 +57,26 @@ const Sidebar = ({ children }) => {
     <>
       <div className="main-container">
         <div className="side-bar">
-          <div className="logo">
-            <TbBrandShazam />
-          </div>
-          <section className="routes">
-            {routes.map((route) => (
-              <NavLink to={route.path} key={route.name}>
-                <div className="icons">
-                  <li className="icon">{route.icon}</li>
-                </div>
-              </NavLink>
-            ))}
-            <div className="logout_icons">
-              <AiOutlineExclamationCircle />
-              <FiLogOut />
+          <div className="side">
+            <div className="logo">
+              <TbBrandShazam />
             </div>
-          </section>
+            <section className="routes">
+              {routes.map((route) => (
+                <>
+                  <NavLink to={route.path} key={route.name}>
+                    <div className="icons">
+                      <li className="icon">{route.icon}</li>
+                    </div>
+                  </NavLink>
+                </>
+              ))}
+            </section>
+          </div>
+          <div className="logout_icons">
+            <AiOutlineExclamationCircle />
+            <FiLogOut />
+          </div>
         </div>
         <main className="main_sidebar">{children}</main>
         <MainContainer />

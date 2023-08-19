@@ -12,7 +12,10 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   transition: 0.3s all;
-  overflow-y: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 :root {
@@ -34,7 +37,10 @@ body {
   text-align: center;
   padding: 4rem 0rem;
   border-right: 1px solid var(--logo-border);
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -42,8 +48,8 @@ body {
   margin: 0 1rem;
   padding-top: 1rem;
   background: var(--logo-border);
-  margin-bottom: 2rem;
   border-radius: 2rem;
+  margin-bottom: 2rem;
 }
 
 .icons {
@@ -51,18 +57,11 @@ body {
   color: var(--primary-color);
   position: relative;
 }
-.routes {
-  margin-bottom: 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .logout_icons {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 10rem;
   font-size: 2.4rem;
   gap: 4rem;
 }

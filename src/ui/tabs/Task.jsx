@@ -86,6 +86,7 @@ const TaskSec = styled.div`
   padding-bottom: 0;
   display: flex;
   gap: 4rem;
+  overflow-x: auto;
 `;
 
 const UpcomingDiv = styled.div`
