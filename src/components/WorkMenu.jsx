@@ -132,7 +132,7 @@ const WorkMenu = ({ children }) => {
                 {workMenu.map((tab, i) => (
                   <>
                     <Tabs>
-                      <NavLink>
+                      <NavLink to={"/"}>
                         <Button
                           id={tab.id}
                           disabled={activeTab === `${tab.id}`}

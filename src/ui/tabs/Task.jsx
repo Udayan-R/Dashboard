@@ -86,16 +86,17 @@ const TaskSec = styled.div`
   padding-bottom: 0;
   display: flex;
   gap: 4rem;
-  overflow-x: auto;
 `;
 
 const UpcomingDiv = styled.div`
   height: 50rem;
-  width: 32rem;
+  width: 100%;
   padding: 2rem;
   border: 1px solid #525151;
   border-radius: 1.4rem;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -121,9 +122,7 @@ const UpIcons = styled.div`
 
 const Ucard = styled.div`
   width: 26rem;
-  margin: 1rem;
   padding: 1.4rem;
-  padding-bottom: 1rem;
   position: relative;
   border: 1px solid #525151;
   border-radius: 1.4rem;
