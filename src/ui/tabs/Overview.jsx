@@ -4,6 +4,7 @@ import FileCard from "../../utils/FileCard";
 const OverviewSec = styled.div`
   height: 100%;
   padding: 4rem 4rem;
+  background: red;
 `;
 
 const Contents = styled.div`

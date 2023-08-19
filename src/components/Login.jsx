@@ -11,7 +11,6 @@ const LoginBar = styled.div`
   color: #fff;
   justify-content: space-between;
   align-items: center;
-
   border-bottom: 0.6px solid #525151;
 `;
 

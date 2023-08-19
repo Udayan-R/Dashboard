@@ -48,6 +48,7 @@ const UcardData = [
       },
     ],
   },
+
   {
     id: "3",
     CardName: "Review Task",
@@ -103,6 +104,25 @@ const UpcomingDiv = styled.div`
   overflow: auto;
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.009) 11.7%,
+    rgba(0, 0, 0, 0.034) 22.1%,
+    rgba(0, 0, 0, 0.072) 31.2%,
+    rgba(0, 0, 0, 0.123) 39.4%,
+    rgba(0, 0, 0, 0.009) 46.6%,
+    rgba(0, 0, 0, 0.009) 53.1%,
+    rgba(0, 0, 0, 0.009) 58.9%,
+    rgba(0, 0, 0, 0.009) 64.3%,
+    rgba(0, 0, 0, 0.009) 69.3%,
+    rgba(0, 0, 0, 0.009) 74.1%,
+    rgba(0, 0, 0, 0.009) 78.8%,
+    rgba(0, 0, 0, 0.009) 83.6%,
+    rgba(0, 0, 0, 0.009) 88.7%,
+    rgba(0, 0, 0, 0.262) 94.1%,
+    rgba(0, 0, 0, 0.39) 100%
+  );
   &::-webkit-scrollbar {
     display: none;
   }

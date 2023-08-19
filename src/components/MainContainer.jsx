@@ -4,6 +4,7 @@ import WorkMenu from "./WorkMenu";
 
 const MainDiv = styled.div`
   width: 100%;
+  height: 100vh;
   background: #232529;
 `;
 
