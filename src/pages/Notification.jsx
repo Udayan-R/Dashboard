@@ -1,5 +1,11 @@
+import SidebarMenu from "../utils/SidebarMenu";
+
 const Notification = () => {
-  return <div>Notification</div>;
+  return (
+    <div>
+      <SidebarMenu />
+    </div>
+  );
 };
 
 export default Notification;

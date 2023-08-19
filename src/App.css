@@ -12,10 +12,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   transition: 0.3s all;
-}
-
-body::-webkit-scrollbar {
-  display: none;
+  overflow: hidden;
 }
 
 :root {
@@ -64,6 +61,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   font-size: 2.4rem;
   gap: 4rem;
+  cursor: pointer;
 }
 
 .icon {

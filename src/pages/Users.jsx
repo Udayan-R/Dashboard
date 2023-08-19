@@ -1,5 +1,12 @@
+import SidebarMenu from "../utils/SidebarMenu";
+
 const Users = () => {
-  return <div>Users</div>;
+  return (
+    <div>
+      {" "}
+      <SidebarMenu />
+    </div>
+  );
 };
 
 export default Users;

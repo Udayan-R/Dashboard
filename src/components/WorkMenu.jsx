@@ -39,6 +39,8 @@ const workMenu = [
 ];
 
 const WorkLink = styled.div`
+  height: 14rem;
+  width: 135rem;
   padding-bottom: 2.6rem;
 `;
 

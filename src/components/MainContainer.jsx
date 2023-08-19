@@ -3,7 +3,7 @@ import Login from "./Login";
 import WorkMenu from "./WorkMenu";
 
 const MainDiv = styled.div`
-  width: 100vw;
+  width: 100%;
   background: #232529;
 `;
 

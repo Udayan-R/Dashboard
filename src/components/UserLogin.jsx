@@ -7,7 +7,6 @@ const UserLog = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
-  position: relative;
 `;
 
 const Username = styled.p`
@@ -34,7 +33,7 @@ const UserLogin = () => {
             <AiOutlineDown onClick={toggle} />
           </UserDown>
         </UserLog>
-        {isOpen && <LoginDetails />}
+        {isOpen ? <LoginDetails /> : ""}
       </div>
     </>
   );

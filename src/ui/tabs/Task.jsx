@@ -81,16 +81,19 @@ const UcardData = [
   },
 ];
 const TaskSec = styled.div`
-  height: 54rem;
+  /* width: fit-content;s */
+  width: 150rem;
+  height: 57rem;
   padding: 4rem 4rem;
   padding-bottom: 0;
   display: flex;
   gap: 4rem;
+  overflow-x: scroll;
 `;
 
 const UpcomingDiv = styled.div`
   height: 50rem;
-  width: 100%;
+  width: 30rem;
   padding: 2rem;
   border: 1px solid #525151;
   border-radius: 1.4rem;

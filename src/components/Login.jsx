@@ -4,7 +4,7 @@ import Button from "../ui/darkmodebtn/Button";
 import Notification from "../ui/notification/Notification";
 import UserLogin from "./UserLogin";
 
-const LoginBar = styled.h6`
+const LoginBar = styled.div`
   width: 135rem;
   display: flex;
   padding: 2rem;

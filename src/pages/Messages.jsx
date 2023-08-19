@@ -1,5 +1,11 @@
+import SidebarMenu from "../utils/SidebarMenu";
+
 const Messages = () => {
-  return <div>Messages</div>;
+  return (
+    <div>
+      <SidebarMenu />
+    </div>
+  );
 };
 
 export default Messages;

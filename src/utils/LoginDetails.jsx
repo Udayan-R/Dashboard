@@ -47,6 +47,7 @@ const UserBox = styled.div`
   top: 10rem;
   padding: 2rem;
   border-radius: 2rem;
+  z-index: 100;
 `;
 
 const UserD = styled.div`

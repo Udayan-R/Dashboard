@@ -1,9 +1,11 @@
-import React from 'react'
+import SidebarMenu from "../utils/SidebarMenu";
 
 const Menu = () => {
   return (
-    <div>Menu</div>
-  )
-}
+    <div>
+      <SidebarMenu />
+    </div>
+  );
+};
 
-export default Menu
+export default Menu;
