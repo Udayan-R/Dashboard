@@ -78,7 +78,7 @@ const Ul = styled.div`
 const Tabs = styled.div``;
 
 const WorkMenu = ({ children }) => {
-  const [activeTab, setActiveTab] = useState();
+  const [activeTab, setActiveTab] = useState("1");
   const handleTabClick = (e) => {
     setActiveTab(e.target.id);
   };
