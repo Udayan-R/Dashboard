@@ -62,10 +62,10 @@ const Sidebar = ({ children }) => {
               <TbBrandShazam />
             </div>
             <section className="routes">
-              {routes.map((route) => (
+              {routes.map((route, i) => (
                 <>
                   <div className="icons">
-                    <NavLink className="icon" to={route.path} key={route.name}>
+                    <NavLink className="icon" to={route.path} key={i}>
                       {route.icon}
                     </NavLink>
                   </div>

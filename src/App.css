@@ -172,3 +172,51 @@ a.active::before {
   width: 100%;
   border-radius: 50%;
 }
+
+.box {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  color: #737070;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.box:hover {
+  color: #fff;
+}
+
+.box:hover::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  left: 0;
+  bottom: -2.2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.box_active {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.box_active::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  left: 0;
+  bottom: -2.2rem;
+  transition: 0.3s ease-in-out;
+}

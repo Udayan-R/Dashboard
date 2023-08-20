@@ -11,7 +11,6 @@ import Files from "../ui/tabs/Files";
 
 const workMenu = [
   {
-    path: "/",
     name: "Overview",
     id: 1,
     tabDiv: <Overview />,
@@ -78,31 +77,8 @@ const Ul = styled.div`
 
 const Tabs = styled.div``;
 
-const Button = styled.button`
-  background: transparent;
-  outline: none;
-  border: none;
-  font-size: 2rem;
-  color: #737070;
-  font-weight: 600;
-  cursor: pointer;
-  position: relative;
-
-  &:hover::before {
-    position: absolute;
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 100%;
-    background: #fff;
-    left: 0;
-    bottom: -2.2rem;
-    transition: 0.3s ease-in-out;
-  }
-`;
 const WorkMenu = ({ children }) => {
-  const [activeTab, setActiveTab] = useState(1);
-
+  const [activeTab, setActiveTab] = useState();
   const handleTabClick = (e) => {
     setActiveTab(e.target.id);
   };
@@ -131,19 +107,21 @@ const WorkMenu = ({ children }) => {
           <>
             <div>
               <Ul>
-                {workMenu.map((tab, i) => (
+                {workMenu.map((tab, index) => (
                   <>
                     <Tabs>
                       <div>
-                        <Button
-                          to={tab.path}
+                        <button
+                          className={
+                            activeTab === `${tab.id}` ? " box_active" : "box"
+                          }
                           id={tab.id}
                           disabled={activeTab === `${tab.id}`}
                           onClick={handleTabClick}
-                          key={i}
+                          key={index}
                         >
                           {tab.name}
-                        </Button>
+                        </button>
                       </div>
                     </Tabs>
                   </>
