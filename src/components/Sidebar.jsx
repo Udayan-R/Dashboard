@@ -11,48 +11,30 @@ import { FiUsers } from "react-icons/fi";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
 import { FiLogOut } from "react-icons/fi";
 import MainContainer from "./MainContainer";
+import { useState } from "react";
 
 // eslint-disable-next-line no-unused-vars
 const routes = [
+  { id: 1, path: "/", name: "Dashboard", icon: <MdOutlineSpaceDashboard /> },
+  { id: 2, path: "/analytics", name: "Analytics", icon: <TbDeviceAnalytics /> },
+  { id: 3, path: "/menu", name: "Menu", icon: <BsMenuButtonWide /> },
+  { id: 4, path: "/messages", name: "Messages", icon: <LuMessageSquare /> },
   {
-    path: "/",
-    name: "Dashboard",
-    icon: <MdOutlineSpaceDashboard />,
-  },
-  {
-    path: "/analytics",
-    name: "Analytics",
-    icon: <TbDeviceAnalytics />,
-  },
-  {
-    path: "/menu",
-    name: "Menu",
-    icon: <BsMenuButtonWide />,
-  },
-  {
-    path: "/messages",
-    name: "Messages",
-    icon: <LuMessageSquare />,
-  },
-  {
+    id: 5,
     path: "/notification",
     name: "Notification",
     icon: <IoMdNotificationsOutline />,
   },
 
-  {
-    path: "/users",
-    name: "Users",
-    icon: <FiUsers />,
-  },
-  {
-    path: "/setting",
-    name: "Setting",
-    icon: <AiOutlineSetting />,
-  },
+  { id: 6, path: "/users", name: "Users", icon: <FiUsers /> },
+  { id: 7, path: "/setting", name: "Setting", icon: <AiOutlineSetting /> },
 ];
 
 const Sidebar = ({ children }) => {
+  const [active, setActive] = useState("1");
+  const handleTabClick = (e) => {
+    setActive(e.target.id);
+  };
   return (
     <>
       <div className="main-container">
@@ -62,10 +44,17 @@ const Sidebar = ({ children }) => {
               <TbBrandShazam />
             </div>
             <section className="routes">
-              {routes.map((route, i) => (
+              {routes.map((route, index) => (
                 <>
                   <div className="icons">
-                    <NavLink className="icon" to={route.path} key={i}>
+                    <NavLink
+                      className="icon"
+                      to={route.path}
+                      id={route.id}
+                      disabled={active === `${route.id}`}
+                      onClick={handleTabClick}
+                      key={index}
+                    >
                       {route.icon}
                     </NavLink>
                   </div>
