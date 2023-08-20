@@ -67,6 +67,27 @@ body {
 .icon {
   width: 8rem;
   font-size: 2.4rem;
+  color: #fff;
+}
+
+.sidebar::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 3.8rem;
+  background: #fff;
+  left: 0;
+  top: 1rem;
+}
+
+a.active::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 3.8rem;
+  background: #fff;
+  left: 0;
+  top: 1rem;
 }
 
 .icon:hover::before {

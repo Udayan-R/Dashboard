@@ -8,10 +8,10 @@ import Task from "../ui/tabs/Task";
 import Timeline from "../ui/tabs/Timeline";
 import Discussion from "../ui/tabs/Discussion";
 import Files from "../ui/tabs/Files";
-import { NavLink } from "react-router-dom";
 
 const workMenu = [
   {
+    path: "/",
     name: "Overview",
     id: 1,
     tabDiv: <Overview />,
@@ -134,8 +134,9 @@ const WorkMenu = ({ children }) => {
                 {workMenu.map((tab, i) => (
                   <>
                     <Tabs>
-                      <NavLink to={"/"}>
+                      <div>
                         <Button
+                          to={tab.path}
                           id={tab.id}
                           disabled={activeTab === `${tab.id}`}
                           onClick={handleTabClick}
@@ -143,7 +144,7 @@ const WorkMenu = ({ children }) => {
                         >
                           {tab.name}
                         </Button>
-                      </NavLink>
+                      </div>
                     </Tabs>
                   </>
                 ))}

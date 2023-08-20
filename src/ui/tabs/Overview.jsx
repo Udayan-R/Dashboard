@@ -2,7 +2,7 @@ import styled from "styled-components";
 import FileCard from "../../utils/FileCard";
 
 const OverviewSec = styled.div`
-  height: 100vh;
+  height: 100%;
   padding: 4rem 4rem;
 `;
 

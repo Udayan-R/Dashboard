@@ -64,11 +64,11 @@ const Sidebar = ({ children }) => {
             <section className="routes">
               {routes.map((route) => (
                 <>
-                  <NavLink to={route.path} key={route.name}>
-                    <div className="icons">
-                      <li className="icon">{route.icon}</li>
-                    </div>
-                  </NavLink>
+                  <div className="icons">
+                    <NavLink className="icon" to={route.path} key={route.name}>
+                      {route.icon}
+                    </NavLink>
+                  </div>
                 </>
               ))}
             </section>
