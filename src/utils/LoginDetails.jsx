@@ -5,7 +5,7 @@ import { FiSettings } from "react-icons/fi";
 import { SlGraph } from "react-icons/sl";
 import { FiHelpCircle } from "react-icons/fi";
 import { LuLogOut } from "react-icons/lu";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { styled } from "styled-components";
 
@@ -83,12 +83,12 @@ const LoginDetails = () => {
           </div>
         </UserD>
         {userLinks.map((user) => (
-          <NavLink className="user_link" key={user.name}>
+          <Link className="user_link" key={user.name}>
             <UserMenu>
               <div>{user.icon}</div>
               <div>{user.name}</div>
             </UserMenu>
-          </NavLink>
+          </Link>
         ))}
       </UserBox>
     </>
