@@ -23,7 +23,7 @@ const TreeNode = ({ node }) => {
 
   return (
     <>
-      <MainHead>
+      <MainHead onClick={handleClick}>
         <span style={{ cursor: "pointer" }} onClick={handleClick}>
           {label}
         </span>
