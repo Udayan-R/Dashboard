@@ -27,6 +27,7 @@ const routes = [
   },
 
   { id: 6, path: "/users", name: "Users", icon: <FiUsers /> },
+
   { id: 7, path: "/setting", name: "Setting", icon: <AiOutlineSetting /> },
 ];
 

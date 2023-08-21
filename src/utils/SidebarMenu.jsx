@@ -5,28 +5,31 @@ import styled from "styled-components";
 import { useState } from "react";
 import Tree from "../utils/treeview/Tree";
 
-export const treeData = [
+const treeData = [
   {
     key: "0",
     label: "FAVOURITES",
     icon: <AiOutlineDown />,
     children: [
       {
-        key: "0-0",
+        key: "0",
         label: "Goriorio Project",
         img: "src/images/bird_2.jpg",
+        children: [],
       },
 
       {
-        key: "0-1",
+        key: "0",
         label: "Conch Project",
         img: "src/images/diamond.png",
+        children: [],
       },
 
       {
-        key: "0-2",
+        key: "0",
         label: "Biznet Design",
         img: "src/images/107.jpg",
+        children: [],
       },
     ],
   },
@@ -37,49 +40,54 @@ export const treeData = [
 
     children: [
       {
-        key: "1-1",
+        key: "1",
         label: "Dribble Shot",
         img: "src/images/logo.png",
+        children: [],
       },
       {
-        key: "1-2",
+        key: "1",
         label: "Virgin Project",
         img: "src/images/lotus.png",
+        children: [],
       },
       {
-        key: "1-3",
+        key: "1",
         label: "Native Project",
         img: "src/images/n company.avif",
 
         children: [
           {
-            key: "1-3-1",
+            key: "1",
             label: "Website Design",
           },
           {
-            key: "1-3-2",
+            key: "1",
             label: "Dashboard",
           },
           {
-            key: "1-3-3",
+            key: "1",
             label: "Mobile Responsive",
           },
         ],
       },
       {
-        key: "1-4",
+        key: "2",
         label: "Brave Wings Project",
         img: "src/images/9_1sasa11.jpg",
+        children: [],
       },
       {
-        key: "1-5",
+        key: "2",
         label: "Obelix Project",
         img: "src/images/flying-eagle-abstract.jpg.avif",
+        children: [],
       },
       {
-        key: "1-6",
+        key: "2",
         label: "VPN Project",
         img: "src/images/eagle-logo_23987-400.avif",
+        children: [],
       },
     ],
   },
