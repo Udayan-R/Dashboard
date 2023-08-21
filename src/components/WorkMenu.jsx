@@ -75,6 +75,64 @@ const Ul = styled.div`
   border-bottom: 0.6px solid #525151;
 `;
 
+const Head = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+const Span = styled.span`
+  font-size: 1.2rem;
+  color: #fff;
+  background: #313337;
+  padding: 0.8rem;
+  border-radius: 50%;
+  margin-left: -1rem;
+  border: 2px solid #232529;
+  margin-right: 3rem;
+  position: relative;
+  &::after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background: #525151;
+    position: absolute;
+    right: -1.8rem;
+    top: 0;
+  }
+`;
+
+const Members = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const ImgDiv = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const MemberBtn = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+`;
+
+const Btn = styled.a`
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 1rem 1.8rem;
+  background: #4f5ff6;
+  border-radius: 1rem;
+  margin-right: 2rem;
+`;
+
+const ImgSec = styled.img`
+  width: 3.8rem;
+  margin-left: -0.8rem;
+  border: 2px solid #232529;
+  border-radius: 100%;
+`;
 const Tabs = styled.div``;
 
 const WorkMenu = ({ children }) => {
@@ -87,22 +145,35 @@ const WorkMenu = ({ children }) => {
     <>
       <div>
         <WorkLink>
-          <HelpStar>
-            <Workimg>
-              <img
-                className="work_img"
-                src="src/images/n company.avif"
-                alt=""
-              />
-            </Workimg>
-            <H1>Native Project</H1>
-            <Help>
-              <BsExclamationCircle />
-            </Help>
-            <Help>
-              <AiOutlineStar />
-            </Help>
-          </HelpStar>
+          <Head>
+            <HelpStar>
+              <Workimg>
+                <img
+                  className="work_img"
+                  src="src/images/n company.avif"
+                  alt=""
+                />
+              </Workimg>
+              <H1>Native Project</H1>
+              <Help>
+                <BsExclamationCircle />
+              </Help>
+              <Help>
+                <AiOutlineStar />
+              </Help>
+            </HelpStar>
+            <Members>
+              <ImgDiv>
+                <ImgSec src="src/images/dashboard.png" alt="" />
+                <ImgSec src="src/images/dashboard.png" alt="" />
+                <ImgSec src="src/images/dashboard.png" alt="" />
+                <Span>+5</Span>
+              </ImgDiv>
+              <MemberBtn>
+                <Btn href="#">+ Add Member</Btn>
+              </MemberBtn>
+            </Members>
+          </Head>
 
           <>
             <div>
