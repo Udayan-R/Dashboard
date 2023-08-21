@@ -26,7 +26,7 @@ const UserLogin = () => {
   return (
     <>
       <div>
-        <UserLog>
+        <UserLog onClick={toggle}>
           <img src="src/images/dashboard.png" alt="" />
           <Username>Udayan</Username>
           <UserDown>
