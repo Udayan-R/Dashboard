@@ -60,14 +60,17 @@ const treeData = [
           {
             key: "1",
             label: "Website Design",
+            children: [],
           },
           {
             key: "1",
             label: "Dashboard",
+            children: [],
           },
           {
             key: "1",
             label: "Mobile Responsive",
+            children: [],
           },
         ],
       },
